@@ -98,7 +98,7 @@ function buildAndShowHomeHTML (categories) {
     function (homeHtml) {
 
       var chosenCategoryShortName = chooseRandomCategory(categories);
-      var homeHtmlToInsertIntoMainPage = $dc.loadMenuItems("'" + chosenCategoryShortName + "'");
+      var homeHtmlToInsertIntoMainPage = $dc.loadMenuItems("'" + chosenCategoryShortName.short_name + "'");
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
     },
