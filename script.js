@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML(categories), true); // Explicitely setting the flag to get JSON from server processed into an object literal
+  buildAndShowHomeHTML, true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
 
