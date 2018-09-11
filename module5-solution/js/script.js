@@ -97,9 +97,6 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
 
-      var chosenCategoryShortName = chooseRandomCategory(categories);
-      var homeHtmlToInsertIntoMainPage = $dc.loadMenuItems("'" + chosenCategoryShortName.short_name + "'");
-      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
